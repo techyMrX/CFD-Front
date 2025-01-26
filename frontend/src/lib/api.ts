@@ -91,7 +91,7 @@ export async function sendEmergencyAlert(
 }
 
 // Create this new file for API calls
-const API_BASE_URL = 'http://localhost:5000/api'; // or whatever your backend URL is
+const API_BASE_URL = 'https://backend-cfd.onrender.com'; // or whatever your backend URL is
 
 export const contactsApi = {
   getContacts: async () => {
