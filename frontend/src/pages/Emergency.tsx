@@ -75,7 +75,7 @@ function Emergency() {
       const token = localStorage.getItem('token');
       console.log("Sending location:", state.location); // Debug log
 
-      const response = await fetch('http://localhost:5000/api/send-location', {
+      const response = await fetch('https://backend-cfd.onrender.com/api/send-location', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

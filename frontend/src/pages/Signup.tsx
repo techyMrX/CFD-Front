@@ -24,7 +24,7 @@ function Signup(): JSX.Element {
     setError('');
     
     try {
-      const response = await fetch('http://localhost:5000/api/auth/register', {  // Note: Changed port to 5000
+      const response = await fetch('https://backend-cfd.onrender.com/api/auth/register', {  // Note: Changed port to 5000
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

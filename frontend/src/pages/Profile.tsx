@@ -39,7 +39,7 @@ function Profile(): JSX.Element {
   const fetchProfile = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch('http://localhost:5000/api/profile', {
+      const response = await fetch('https://backend-cfd.onrender.com/api/profile', {
         headers: {
           'Authorization': `Bearer ${token}`
         }
@@ -58,7 +58,7 @@ function Profile(): JSX.Element {
   const fetchContacts = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch('http://localhost:5000/api/contacts', {
+      const response = await fetch('https://backend-cfd.onrender.com/api/contacts', {
         headers: {
           'Authorization': `Bearer ${token}`
         }
@@ -79,7 +79,7 @@ function Profile(): JSX.Element {
 
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch('http://localhost:5000/api/contacts', {
+      const response = await fetch('https://backend-cfd.onrender.com/api/contacts', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

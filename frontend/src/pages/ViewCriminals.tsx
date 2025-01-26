@@ -26,7 +26,7 @@ function ViewCriminals(): JSX.Element {
     const fetchCriminals = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await fetch('http://localhost:5000/api/criminals', {
+        const response = await fetch('https://backend-cfd.onrender.com/api/criminals', {
           headers: {
             'Authorization': `Bearer ${token}`
           }
@@ -70,7 +70,7 @@ function ViewCriminals(): JSX.Element {
           {criminals.map((criminal) => (
             <div key={criminal.id} className="bg-white p-4 rounded-lg shadow-md">
               <img
-                src={`http://localhost:5000/${criminal.image_path}`}
+                src={`https://backend-cfd.onrender.com/${criminal.image_path}`}
                 alt={criminal.name}
                 className="w-full h-48 object-cover rounded-md mb-4"
               />

@@ -50,7 +50,7 @@ function Identify(): JSX.Element {
       const token = localStorage.getItem('token');
       console.log('Sending request...'); // Debug log
       
-      const response = await fetch('http://localhost:5000/api/identify', {
+      const response = await fetch('https://backend-cfd.onrender.com/api/identify', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`

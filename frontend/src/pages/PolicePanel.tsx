@@ -35,7 +35,7 @@ function PolicePanel(): JSX.Element {
 
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch('http://localhost:5000/api/police/add-criminal', {
+      const response = await fetch('https://backend-cfd.onrender.com/api/police/add-criminal', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`

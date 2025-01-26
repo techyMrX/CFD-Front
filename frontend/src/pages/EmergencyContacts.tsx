@@ -28,7 +28,7 @@ function EmergencyContacts() {
   const fetchContacts = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch('http://localhost:5000/api/contacts', {
+      const response = await fetch('https://backend-cfd.onrender.com/api/contacts', {
         headers: {
           'Authorization': `Bearer ${token}`
         }
@@ -49,7 +49,7 @@ function EmergencyContacts() {
 
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch('http://localhost:5000/api/contacts', {
+      const response = await fetch('https://backend-cfd.onrender.com/api/contacts', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

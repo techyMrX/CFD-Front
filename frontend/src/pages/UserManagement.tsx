@@ -29,7 +29,7 @@ function UserManagement(): JSX.Element {
       const token = localStorage.getItem('token');
       console.log('Fetching with token:', token); // Debug log
       
-      const response = await fetch('http://localhost:5000/api/users', {
+      const response = await fetch('https://backend-cfd.onrender.com/api/users', {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${token}`,

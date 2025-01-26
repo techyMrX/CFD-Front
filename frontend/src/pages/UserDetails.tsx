@@ -37,7 +37,7 @@ function UserDetails(): JSX.Element {
   const fetchUserDetails = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch(`http://localhost:5000/api/users/${id}/contacts`, {
+      const response = await fetch(`https://backend-cfd.onrender.com/api/users/${id}/contacts`, {
         headers: {
           'Authorization': `Bearer ${token}`
         }
